@@ -1,0 +1,20 @@
+Pinos do Arduino ; Pinos do LCD ; Notas
+GND	; Vss
+	; RW
+	; LED-
+
+5V	; Vcc
+	; LED+; Via um resistor de 68Ω ou mais
+
+5	; V0; PWM substitui um potenciômetro para controle do contraste
+7	; RS
+8	; E
+9	; DB4
+10	; DB5
+11	; DB6
+12	; DB7
+
+(não conectados); DB0
+	; DB1
+	; DB2
+	; DB3

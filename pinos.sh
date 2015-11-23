@@ -63,7 +63,7 @@ $1=="" && $2=="" && $3=="" {
 END {
     zebra=0
 	#print "<body>"
-	#print "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />" 
+	print "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />" 
 	
 
 	print "<style>"
@@ -75,6 +75,7 @@ END {
 	print ".pinostd1 {width:150px; text-align: center;}"
 	print ".pinostd2 {width:150px; text-align: center; line-height: 15pt;}"
 	print ".pinostd3 {width:150px; font-size: 10pt;}"
+	print ".pinoscontent {vertical-align: middle;}"
 	print "</style>"
 	print "<table class=pinostable"modtable">"
 	for (i=0;i<linha;i++) {
@@ -94,10 +95,10 @@ END {
 
 		print "	<tr class=pinostr"modtr">"
 		if (f1[i]!="") {
-			print "		<td class=pinostd1"modtd1">"f1[i]
+			print "		<td class=pinostd1"modtd1"><div class=pinoscontent>"f1[i]"</div>"
 		}	
-		print "		<td class=pinostd2"modtd2">"f2[i]
-		print "		<td class=pinostd3"modtd3">"f3[i]
+		print "		<td class=pinostd2"modtd2"><div class=pinoscontent>"f2[i]"</div>"
+		print "		<td class=pinostd3"modtd3"><div class=pinoscontent>"f3[i]"</div>"
 	}
 	print "</table>"
 }

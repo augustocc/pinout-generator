@@ -1,5 +1,4 @@
-# pinout-generator
-Generates pinout descriptions in HTML + CSS
+# pinos.sh - generates HTML pinout descriptions from a plain text file
 
 This is a simple shell script to generate standard descriptions of pin connections between 2 devices. Call it like this: 
 
